@@ -1,15 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import { useEffect, useState } from 'react';
 
 function App() {
   return (
     <div className="App">
-      <Countries></Countries>
+      
     </div>
   );
 }
 
+
+/* 
 function Countries() {
   const [countries, setCountries] = useState([]);
 
@@ -22,8 +22,20 @@ function Countries() {
     <div>
       <h2>Traveling arount the world!!!</h2>
       <h3>Countries Available: {countries.length}</h3>
+      {
+        countries.map(country => <Country name={country.name.common} capital={country.capital}></Country>)
+      }
     </div>
   );
 }
 
+function Country(props) {
+  return (
+    <div>
+      <h2>Name: {props.name}</h2>
+      <h4>Capital: {props.capital}</h4>
+    </div>
+  );
+}
+ */
 export default App;
