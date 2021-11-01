@@ -6,7 +6,7 @@ const Country = (props) => {
   const name = props.country.name.common;
   const flag = props.country.flags.png;
   const capital = props.country.capital;
-  console.log(props.country);
+  // console.log(props.country);
   return (
     <div className='country'>
       <h4>This is: {name}</h4>
